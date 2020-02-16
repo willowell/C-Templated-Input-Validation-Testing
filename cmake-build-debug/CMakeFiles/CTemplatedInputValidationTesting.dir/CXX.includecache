@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/main.cpp
+functional
+-
+iostream
+-
+limits
+-
+string
+-
+type_traits
+-
+

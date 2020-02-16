@@ -1,0 +1,4 @@
+"/Users/whowell/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6494.38/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G "CodeBlocks - Unix Makefiles" /Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-debug
