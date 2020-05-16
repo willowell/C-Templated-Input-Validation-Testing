@@ -1,0 +1,3 @@
+/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/CMakeFiles/rebuild_cache.dir
+/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/CMakeFiles/edit_cache.dir
+/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/CMakeFiles/CTemplatedInputValidationTesting.dir

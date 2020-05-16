@@ -11,30 +11,35 @@
 using namespace std;
 
 namespace MyIO {
-	/* REQUIRES C++20
+	// REQUIRES C++20
     template<typename T>
     concept Arithmetic = std::is_arithmetic<T>::value;
 
     template<Arithmetic A>
-    A add2(A x, A y) { return x + y; }
-    */
-	template <typename T>
-	using Arithmetic = typename
-			std::enable_if<std::is_arithmetic<T>::value, T>::type;
+    A add(A x, A y) { return x + y; }
+    
+    template<typename T>
+    concept Printable = requires(T elem, std::ostream& os) {
+		{ os << elem };
+    };
+    
+    template<Printable P>
+    void printIt(P a) { std::cout << a << std::endl; }
 	
 	/**
-	 * Prints a prompt to STDOUT, reads in a T value from STDIN, and validates the input using `validator`
+	 * Prints a prompt to STDOUT, reads in an Arithmetic value from STDIN, and validates the input using `validator`
 	 * 	as a predicate.
-	 * @tparam T The type of the user's input.
+	 * @tparam A The type of the user's input. Must fulfill Arithmetic concept.
 	 * @param prompt Message to display to user.
-	 * @param validator return-type: bool argument-type: T A lambda that determines the predicate on the input.
-	 * @return A T value, valid for the given predicate.
+	 * @param validator return-type: bool argument-type: Arithmetic A lambda that determines the predicate on the input.
+	 * 		e.g., [] (int arg) -> bool { return (arg >= 0 && arg <= 10); }
+	 * @return An Arithmetic value, valid for the given predicate.
 	 *
 	 *
 	 */
-	template <typename T>
-	T input(const std::string& prompt, function <bool(T)> validator) {
-		T user_input {};
+	template <Arithmetic A>
+	A input(const std::string& prompt, std::function <bool(A)> validator) {
+		A user_input {};
 		
 		// Shorthand to clean up the for-loop.
 		auto prompt_for_input = [&]() {
@@ -48,51 +53,44 @@ namespace MyIO {
 			std::cin.clear();
 			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		}
+		
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		
 		return user_input;
 	}
 }
 
-template<class T>
-void get(typename std::enable_if<std::is_arithmetic<T>::value, T>::type &val,
-           const T& low, const T& high, std::string message)
-{
-    for (std::cout << message; 
-            !(std::cin >> val) || val < low || val > high; 
-            std::cout << message) 
-    { 
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    }
-}
+struct Point {
+	float x;
+	float y;
+	float z;
+};
 
-template <typename T>
-T getValidatedInput(function <bool(T)> validator) {
-    T tmp;
-    cin >> tmp;
-    if (!validator(tmp)) {
-        throw ios_base::failure("Invalid input.");
-    }
-    return tmp;
+std::ostream& operator << (std::ostream& os, const Point& p) {
+	os << p.x << ' ' << p.y << ' ' << p.z << '\n';
+	return os;
 }
 
 
-int main() {
+
+auto main() -> int {
   int x = 0;
   
-  //get<int>(x, 0, 10, "enter a number between (0, 10): ");
-
-  //input = getValidatedInput<int>([] (int arg) -> bool { return (arg > 0 && arg < 100); });
+  Point a {5.0, 10.0, 20.0 };
   
-  int my_input = MyIO::input<int>("Enter a number between 0 and 10: ", [] (int arg) -> bool {
-		return (arg >= 0 && arg <= 10);
-	});
-	
-  double my_input_2 = MyIO::input<double>("Enter a number between 0 and 10: ", [] (int arg) -> bool {
+  MyIO::printIt(x);
+  
+  MyIO::printIt(a);
+  
+  auto y = MyIO::add(2, 3);
+  
+  auto my_input = MyIO::input<int>("Enter a number between 0 and 10: ", [] (int arg) -> bool {
 		return (arg >= 0 && arg <= 10);
   });
-  
-  auto my_str = MyIO::input<std::string>("What's my name? ", [] (const std::string& arg) -> bool {
-  	return (arg == "Bob");
+	
+  auto my_input_2 = MyIO::input<double>("Enter a floating point number between 0 and 10: ", [] (int arg) -> bool {
+		return (arg >= 0 && arg <= 10);
   });
   
   return 0;

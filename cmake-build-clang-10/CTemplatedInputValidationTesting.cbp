@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CTemplatedInputValidationTesting"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CTemplatedInputValidationTesting">
+				<Option output="/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/CTemplatedInputValidationTesting" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/10.0.0/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 CTemplatedInputValidationTesting"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CTemplatedInputValidationTesting/fast">
+				<Option output="/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/CTemplatedInputValidationTesting" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/10.0.0/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 CTemplatedInputValidationTesting/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/cmake-build-clang-10/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/main.cpp">
+			<Option target="CTemplatedInputValidationTesting"/>
+		</Unit>
+		<Unit filename="/Users/whowell/GitHub_Repositories/C-Templated-Input-Validation-Testing/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

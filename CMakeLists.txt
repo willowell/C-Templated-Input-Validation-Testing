@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.15)
 project(CTemplatedInputValidationTesting)
 
-set(CMAKE_CXX_STANDARD 17)
+
+SET(CMAKE_C_COMPILER clang)
+SET(CMAKE_CXX_COMPILER clang++)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++2a -stdlib=libc++")
 
 add_executable(CTemplatedInputValidationTesting main.cpp)
